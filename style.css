@@ -109,8 +109,8 @@ h1 {
     .links_block {
         order: 0;
         flex-direction: column;
-        margin-top: 0;
-        margin-bottom: 36px;
+        margin-top: -56px;
+        margin-bottom: 16px;
     }
     .links_block a {
         text-align: center;
