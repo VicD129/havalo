@@ -72,7 +72,6 @@ body {
 }
 
 .details_wrapper,
-.menu_wrapper,
 .map_wrapper,
 .contacts_wrapper {
     height: 100vh;
@@ -89,8 +88,47 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: #fff;
+}
+
 .details_wrapper h1 {
     color: #195225;
+}
+
+.menu_wrapper h2 {
+    margin-left: 32px;
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    margin-right: 16px;
+}
+
+.menu_wrapper h2 > i {
+    color: #62AE7D;
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 350px;
+    height: 197px;
+    background-color: #fff;
+    padding: 16px;
+    margin: 0 16px;
+    border-radius: 8px;
+}
+
+.menu_item p,
+.menu_item h2 {
+    color: #195225;
+    margin: 0;
+    padding: 0;
 }
 
 .footer {
