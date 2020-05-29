@@ -63,6 +63,10 @@ body {
     text-decoration: none;
 }
 
+.links_block a > i {
+    color: #62AE7D;
+}
+
 .hero_wrapper img {
     order: 1;
     width: 100%;
