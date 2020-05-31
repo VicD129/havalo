@@ -70,7 +70,7 @@ body {
 .hero_wrapper img {
     order: 1;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     display: block;
     margin: 0 auto;
 }
