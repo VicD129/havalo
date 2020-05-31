@@ -14,6 +14,7 @@ body {
     display: grid;
     position: fixed;
     top: 0;
+    z-index: 1;
     width: 100%;
     height: 72px;
     background-color: #195225;
@@ -63,8 +64,11 @@ body {
     text-decoration: none;
 }
 
-.links_block a > i {
-    color: #62AE7D;
+.links_block a::after {
+    position: relative;
+    top: 2px;
+    content: url('/angle-right-solid.svg');
+    margin-left: 6px;
 }
 
 .hero_wrapper img {
@@ -100,19 +104,44 @@ h2 {
     color: #195225;
 }
 
-.menu_wrapper h2 {
-    margin-left: 32px;
+.menu_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+.menu_wrapper button {
+    font-family: Kino-Regular;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    margin: 12px;
+    background-color: transparent;
+    border: none;
+}
+
+.menu_wrapper button.collapsible:after {
+    position: relative;
+    top: 2px;
+    content: url('/angle-down-solid.svg');
+    margin-left: 6px;
+}
+
+.menu_wrapper button.collapsible.active:after {
+    content: url('/angle-up-solid.svg');
+}
+
+.menu_wrapper button:focus {
+    outline: none;
 }
 
 .menu_container {
-    display: flex;
+    display: none;
     flex-direction: row;
-    overflow-x: auto;
     padding-bottom: 16px;
-}
-
-.menu_wrapper h2 > i {
-    color: #62AE7D;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .menu_item {
