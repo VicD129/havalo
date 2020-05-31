@@ -3,6 +3,23 @@
     src: url(Kino-Regular.otf);
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #195225;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #62AE7D;
+}
 
 body {
     margin: 0;
@@ -141,7 +158,6 @@ h2 {
     flex-direction: row;
     padding-bottom: 16px;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .menu_item {
