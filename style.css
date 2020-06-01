@@ -46,6 +46,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    background-color: #195225;
 }
 
 .links_block {
@@ -59,7 +60,7 @@ body {
 }
 
 .links_block a {
-    color: #195225;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -116,6 +117,7 @@ h2 {
     cursor: pointer;
     text-align: left;
     margin: 12px;
+    padding: 0;
     background-color: transparent;
     border: none;
 }
