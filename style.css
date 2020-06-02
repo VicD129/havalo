@@ -100,8 +100,14 @@ h2 {
     color: #fff;
 }
 
+.details_wrapper {
+    background: repeat-y center/125% url('/hvl-pattern.svg');
+}
+
 .details_wrapper h1 {
     color: #195225;
+    margin: 0;
+    padding-top: 48px;
 }
 
 .menu_wrapper {
