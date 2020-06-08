@@ -79,7 +79,6 @@ body {
     margin: 0 auto;
 }
 
-.details_wrapper,
 .map_wrapper {
     height: 100vh;
 }
@@ -100,8 +99,17 @@ h2 {
     color: #fff;
 }
 
+h3 {
+    color: #62AE7D;
+}
+
+.text-brand {
+    color: #195225;
+}
+
 .details_wrapper {
-    background: repeat-y center/125% url('/hvl-pattern.svg');
+    padding: 0 8px;
+    /* background: repeat-y center/125% url('/hvl-pattern.svg'); */
 }
 
 .details_wrapper h1 {
@@ -109,6 +117,10 @@ h2 {
     margin: 0;
     padding-top: 48px;
     text-shadow: 0px 0px 20px #fff;
+}
+
+.details_wrapper h2 {
+    color: #62AE7D;
 }
 
 .menu_wrapper {
