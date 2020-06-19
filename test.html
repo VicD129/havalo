@@ -26,18 +26,23 @@
         <img src="/hvl-logo.svg">
     </div>
     <div class="details_wrapper" id="details">
-        <h1>ДЕТАЛІ</h1>
-        <br>
-        <h2>МИ РОЗРОБИЛИ ДЛЯ ВАС <span class="text-brand">УНІКАЛЬНІ ЕЛЕМЕНТИ</span>, ТАКІ ЯК СОФА. ВІД МАЛЮНКУ ДО МІСЦЕВОЇ МАЙСТЕРНІ, І ДО ВАС.</h2>
-        <img src="/sofa.png" alt="" srcset="" width="100%">
-        <br><br><br>
-        <h2>ПЛИТКА ВИМОЩЕННА ЗА СПЕЦІАЛЬНОЇ ТЕХНОЛОГІЄЮ, ВРАХОВУЮЧИ ЗАГАЛЬНУ <span class="text-brand">АТМОСФЕРУ ІНТЕР'ЄРУ</span>.</h2>
-        <img src="/floor.png" alt="" srcset="" width="100%">
-        <br><br><br>
-        <h2>ДВА РОКИ МИ ВІДБИРАЛИ ДЛЯ ВАС МУЗИКУ, ЩОБ ПЕРЕДАТИ <span class="text-brand">АТМОСФЕРУ ЯКУ ВИ ПОКОХАЄТЕ</span>.</h2>
-        <img src="/interior.png" alt="" srcset="" width="100%">
-        <br><br><br>
-        <h2>ТАКИХ <span class="text-brand">ДЕТАЛЕЙ БЕЗЛІЧ!</span> ЗАВІТАВШИ - НЕ КВАПТЕСЯ, ОЗИРНІТЬСЯ, ДОТОРКНІТЬСЯ ДО МАТЕРІАЛІВ, ВІДЧУЙТЕ ЦЕ МІСЦЕ, ЯКЕ СПОВНЕНЕ ЕМОЦІЙ.</h2>
+        <h1 class="details_h1">ДЕТАЛІ</h1>
+        <section class="detail1">
+            <h2 class="detail1_h2">МИ РОЗРОБИЛИ ДЛЯ ВАС <span class="text-brand">УНІКАЛЬНІ ЕЛЕМЕНТИ</span>, ТАКІ ЯК СОФА. ВІД МАЛЮНКУ ДО МІСЦЕВОЇ МАЙСТЕРНІ, І ДО ВАС.</h2>
+            <img class="detail1_img" src="/sofa.png" alt="" srcset="" width="100%">
+        </section>
+        <section class="detail2">
+            <h2 class="detail2_h2">ПЛИТКА ВИМОЩЕННА ЗА СПЕЦІАЛЬНОЇ ТЕХНОЛОГІЄЮ, ВРАХОВУЮЧИ ЗАГАЛЬНУ <span class="text-brand">АТМОСФЕРУ ІНТЕР'ЄРУ</span>.</h2>
+            <img class="detail2_img" src="/floor.png" alt="" srcset="" width="100%">
+        </section>
+        <section class="detail3">
+            <h2 class="detail3_h2">ДВА РОКИ МИ ВІДБИРАЛИ ДЛЯ ВАС МУЗИКУ, ЩОБ ПЕРЕДАТИ <span class="text-brand">АТМОСФЕРУ ЯКУ ВИ ПОКОХАЄТЕ</span>.</h2>
+            <img class="detail3_img" src="/interior.png" alt="" srcset="" width="100%">
+        </section>
+        <section class="detail4">
+            <h2 class="detail4_h2">ТАКИХ <span class="text-brand">ДЕТАЛЕЙ БЕЗЛІЧ!</span> ЗАВІТАВШИ - НЕ КВАПТЕСЯ, ОЗИРНІТЬСЯ, ДОТОРКНІТЬСЯ ДО МАТЕРІАЛІВ, ВІДЧУЙТЕ ЦЕ МІСЦЕ, ЯКЕ СПОВНЕНЕ ЕМОЦІЙ.</h2>
+        </section>
+        <img class="detail_pattern" src="/hvl-pattern.svg">
     </div>
     <div class="menu_wrapper" id="menu">
         <h1>МЕНЮ</h1>
@@ -226,5 +231,60 @@
             });
         }
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+
+    <script>
+        let tl1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".details_wrapper",
+                start: "top bottom"
+            }
+        });
+
+        tl1.from(".details_h1", {y: 300, opacity: 0, duration: 1})
+           .from(".detail1_h2", {y: 300, opacity: 0, duration: 1})
+           .from(".detail1_img", {y: 300, opacity: 0, duration: 1});
+
+        let tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".detail2",
+                start: "top center"
+            }
+        });
+
+        tl2.from(".detail2_h2", {y: 300, opacity: 0, duration: 1})
+           .from(".detail2_img", {y: 300, opacity: 0, duration: 1});
+
+        let tl3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".detail3",
+                start: "top center"
+            }
+        });
+
+        tl3.from(".detail3_h2", {y: 300, opacity: 0, duration: 1})
+           .from(".detail3_img", {y: 300, opacity: 0, duration: 1});
+
+        let tl4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".detail4",
+                start: "top center"
+            }
+        });
+
+        tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1});
+
+        let tl5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".detail_pattern",
+                scrub: true,
+                start: "top bottom"
+            }
+        });
+
+        tl5.from(".detail_pattern", {x: 250})
+    </script>    
 </body>
 </html>

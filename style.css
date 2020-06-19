@@ -104,7 +104,7 @@ h3 {
 }
 
 .text-brand {
-    color: #195225;
+    /* color: #ff352c; */
 }
 
 .details_wrapper {
@@ -112,14 +112,21 @@ h3 {
     /* background: repeat-y center/125% url('/hvl-pattern.svg'); */
 }
 
-.details_wrapper h1 {
+.details_wrapper section {
+    margin-bottom: 48px;
+}
+
+.details_wrapper h1.details_h1 {
     color: #195225;
     margin: 0;
     padding-top: 48px;
+    margin-bottom: 24px;
     text-shadow: 0px 0px 20px #fff;
 }
 
 .details_wrapper h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
     color: #62AE7D;
 }
 
