@@ -130,6 +130,11 @@ h3 {
     color: #62AE7D;
 }
 
+.overflow_wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 .menu_wrapper {
     display: flex;
     flex-direction: column;
