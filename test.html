@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>HVL DESIGN</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="nav_wrapper">
         <ul>
-            <li><a href="#hero"><img src="/hvl-logo.svg" height="48px"></a></li>
+            <li><a href="#hero"><img src="img/hvl-logo.svg" height="48px"></a></li>
             <li><a href="#details">ДЕТАЛІ</a></li>
             <li><a href="#menu">МЕНЮ</a></li>
             <li><a href="#map">МАПА</a></li>
@@ -23,27 +23,27 @@
             <a href="callto:+380672232323">+38 (067) 223 23 23</a>
             <a href="https://instagram.com/hvl.ua?igshid=1l3vpmhdo4vud" target="_blank" rel="noopener">ІНСТАГРАМ</a>
         </div>
-        <img src="/hvl-logo.svg">
+        <img src="img/hvl-logo.svg">
     </div>
     <div class="details_wrapper" id="details">
         <h1 class="details_h1">ДЕТАЛІ</h1>
         <section class="detail1">
             <h2 class="detail1_h2">МИ РОЗРОБИЛИ ДЛЯ ВАС <span class="text-brand">УНІКАЛЬНІ ЕЛЕМЕНТИ</span>, ТАКІ ЯК СОФА. ВІД МАЛЮНКУ ДО МІСЦЕВОЇ МАЙСТЕРНІ, І ДО ВАС.</h2>
-            <img class="detail1_img" src="/sofa.png" alt="" srcset="" width="100%">
+            <img class="detail1_img" src="img/sofa.png" alt="" srcset="" width="100%">
         </section>
         <section class="detail2">
             <h2 class="detail2_h2">ПЛИТКА ВИМОЩЕННА ЗА СПЕЦІАЛЬНОЇ ТЕХНОЛОГІЄЮ, ВРАХОВУЮЧИ ЗАГАЛЬНУ <span class="text-brand">АТМОСФЕРУ ІНТЕР'ЄРУ</span>.</h2>
-            <img class="detail2_img" src="/floor.png" alt="" srcset="" width="100%">
+            <img class="detail2_img" src="img/floor.png" alt="" srcset="" width="100%">
         </section>
         <section class="detail3">
             <h2 class="detail3_h2">ДВА РОКИ МИ ВІДБИРАЛИ ДЛЯ ВАС МУЗИКУ, ЩОБ ПЕРЕДАТИ <span class="text-brand">АТМОСФЕРУ ЯКУ ВИ ПОКОХАЄТЕ</span>.</h2>
-            <img class="detail3_img" src="/interior.png" alt="" srcset="" width="100%">
+            <img class="detail3_img" src="img/interior.png" alt="" srcset="" width="100%">
         </section>
         <section class="detail4">
             <h2 class="detail4_h2">ТАКИХ <span class="text-brand">ДЕТАЛЕЙ БЕЗЛІЧ!</span> ЗАВІТАВШИ - НЕ КВАПТЕСЯ, ОЗИРНІТЬСЯ, ДОТОРКНІТЬСЯ ДО МАТЕРІАЛІВ, ВІДЧУЙТЕ ЦЕ МІСЦЕ, ЯКЕ СПОВНЕНЕ ЕМОЦІЙ.</h2>
         </section>
         <div class="overflow_wrapper">
-            <img class="detail_pattern" src="/hvl-pattern-long.svg">
+            <img class="detail_pattern" src="img/hvl-pattern-long.svg">
         </div>
     </div>
     <div class="menu_wrapper" id="menu">
@@ -217,76 +217,8 @@
     </div>
     <footer>© 2020 Усі права захищено</footer>
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "flex") {
-                content.style.display = "none";
-                } else {
-                    content.style.display = "flex";
-                }
-            });
-        }
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
-
-    <script>
-        let tl1 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".details_wrapper",
-                start: "top center"
-            }
-        });
-
-        tl1.from(".details_h1", {y: 300, opacity: 0, duration: 1})
-           .from(".detail1_h2", {y: 300, opacity: 0, duration: 1})
-           .from(".detail1_img", {y: 300, opacity: 0, duration: 1});
-
-        let tl2 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".detail2",
-                start: "top center"
-            }
-        });
-
-        tl2.from(".detail2_h2", {y: 300, opacity: 0, duration: 1})
-           .from(".detail2_img", {y: 300, opacity: 0, duration: 1});
-
-        let tl3 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".detail3",
-                start: "top center"
-            }
-        });
-
-        tl3.from(".detail3_h2", {y: 300, opacity: 0, duration: 1})
-           .from(".detail3_img", {y: 300, opacity: 0, duration: 1});
-
-        let tl4 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".detail4",
-                start: "top center"
-            }
-        });
-
-        tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1});
-
-        let tl5 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".detail_pattern",
-                scrub: true,
-                start: "top bottom"
-            }
-        });
-
-        tl5.from(".detail_pattern", {x: 250})
-    </script>    
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

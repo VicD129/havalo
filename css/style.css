@@ -1,6 +1,6 @@
 @font-face {
     font-family: Kino-Regular;
-    src: url(Kino-Regular.otf);
+    src: url('font/Kino-Regular.otf');
 }
 
 body {
