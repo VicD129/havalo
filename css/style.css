@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Kino-Regular;
-    src: url('font/Kino-Regular.otf');
+    font-family: "Kino-Regular";
+    src: url("font/Kino-Regular.otf") format("opentype");
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Kino-Regular;
+    font-family: "Kino-Regular";
 }
 
 .nav_wrapper {
@@ -67,7 +67,7 @@ body {
 .links_block a::after {
     position: relative;
     top: 2px;
-    content: url('/angle-right-solid.svg');
+    content: url("/angle-right-solid.svg");
     margin-left: 6px;
 }
 
@@ -103,13 +103,8 @@ h3 {
     color: #62AE7D;
 }
 
-.text-brand {
-    /* color: #ff352c; */
-}
-
 .details_wrapper {
     padding: 0 8px;
-    /* background: repeat-y center/125% url('/hvl-pattern.svg'); */
 }
 
 .details_wrapper section {
@@ -148,7 +143,7 @@ h3 {
 }
 
 .menu_wrapper button {
-    font-family: Kino-Regular;
+    font-family: "Kino-Regular";
     font-size: 24px;
     color: #fff;
     cursor: pointer;
@@ -162,12 +157,12 @@ h3 {
 .menu_wrapper button.collapsible:after {
     position: relative;
     top: 2px;
-    content: url('/angle-down-solid.svg');
+    content: url("/angle-down-solid.svg");
     margin-left: 6px;
 }
 
 .menu_wrapper button.collapsible.active:after {
-    content: url('/angle-up-solid.svg');
+    content: url("/angle-up-solid.svg");
 }
 
 .menu_wrapper button:focus {
