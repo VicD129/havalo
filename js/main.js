@@ -78,5 +78,7 @@ for(const siema of siemas) {
 // Logo animation
 gsap.to('.logo', {
     duration: 1.5,
-    scale: 1
+    delay: 1,
+    scale: 1,
+    ease: 'bounce'
 })
