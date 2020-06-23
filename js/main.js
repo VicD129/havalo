@@ -74,3 +74,9 @@ for(const siema of siemas) {
     selector: siema
   })
 }
+
+// Logo animation
+gsap.to('.logo', {
+    duration: 1.5,
+    scale: 1
+})

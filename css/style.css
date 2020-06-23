@@ -71,12 +71,13 @@ body {
     margin-left: 6px;
 }
 
-.hero_wrapper img {
+.hero_wrapper img.logo {
     order: 1;
     width: 100%;
     max-width: 250px;
     display: block;
     margin: 0 auto;
+    transform: scale(0.1);
 }
 
 .map_wrapper {
