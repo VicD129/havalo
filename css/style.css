@@ -50,7 +50,7 @@ body {
 }
 
 .links_block {
-    order: 2;
+    order: 3;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -69,6 +69,10 @@ body {
     top: 2px;
     content: url("/angle-right-solid.svg");
     margin-left: 6px;
+}
+
+.hero_wrapper h3 {
+    order: 2;
 }
 
 .hero_wrapper img.logo {

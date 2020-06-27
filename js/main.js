@@ -56,15 +56,15 @@ let tl4 = gsap.timeline({
 
 tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1});
 
-let tl5 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".detail_pattern",
-        scrub: true,
-        start: "top bottom"
-    }
-});
+// let tl5 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".detail_pattern",
+//         scrub: true,
+//         start: "top bottom"
+//     }
+// });
 
-tl5.from(".detail_pattern", {x: 250})
+// tl5.from(".detail_pattern", {x: 250})
 
 // Siema carousel
 const siemas = document.querySelectorAll('.siema');
@@ -79,6 +79,5 @@ for(const siema of siemas) {
 gsap.to('.logo', {
     duration: 1.5,
     delay: 1,
-    scale: 1,
-    ease: 'bounce'
+    scale: 1
 })
