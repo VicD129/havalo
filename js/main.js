@@ -67,9 +67,17 @@ tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1});
 // tl5.from(".detail_pattern", {x: 250})
 
 // Glidejs carousel
-new Glide('.glide.glide1').mount();
-new Glide('.glide.glide2').mount();
-new Glide('.glide.glide3').mount();
+new Glide('.glide.glide1', {
+    autoplay: 3000
+}).mount();
+
+new Glide('.glide.glide2', {
+    autoplay: 3000
+}).mount();
+
+new Glide('.glide.glide3', {
+    autoplay: 3000
+}).mount();
 
 // Logo animation
 gsap.to('.logo', {
