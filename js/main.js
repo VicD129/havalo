@@ -25,7 +25,7 @@ let tl1 = gsap.timeline({
 
 tl1.from(".details_h1", {y: 300, opacity: 0, duration: 1})
    .from(".detail1_h2", {y: 300, opacity: 0, duration: 1})
-   .from(".siema_1", {y: 300, opacity: 0, duration: 1});
+   .from(".glide1", {y: 300, opacity: 0, duration: 1});
 
 let tl2 = gsap.timeline({
     scrollTrigger: {
@@ -35,7 +35,7 @@ let tl2 = gsap.timeline({
 });
 
 tl2.from(".detail2_h2", {y: 300, opacity: 0, duration: 1})
-   .from(".siema_2", {y: 300, opacity: 0, duration: 1});
+   .from(".glide2", {y: 300, opacity: 0, duration: 1});
 
 let tl3 = gsap.timeline({
     scrollTrigger: {
@@ -45,7 +45,7 @@ let tl3 = gsap.timeline({
 });
 
 tl3.from(".detail3_h2", {y: 300, opacity: 0, duration: 1})
-   .from(".siema_3", {y: 300, opacity: 0, duration: 1});
+   .from(".glide3", {y: 300, opacity: 0, duration: 1});
 
 let tl4 = gsap.timeline({
     scrollTrigger: {
@@ -66,18 +66,14 @@ tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1});
 
 // tl5.from(".detail_pattern", {x: 250})
 
-// Siema carousel
-const siemas = document.querySelectorAll('.siema');
-
-for(const siema of siemas) {
-  new Siema({
-    selector: siema
-  })
-}
+// Glidejs carousel
+new Glide('.glide.glide1').mount();
+new Glide('.glide.glide2').mount();
+new Glide('.glide.glide3').mount();
 
 // Logo animation
 gsap.to('.logo', {
     duration: 1.5,
     delay: 1,
     scale: 1
-})
+});
