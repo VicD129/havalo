@@ -54,7 +54,7 @@ let tl4 = gsap.timeline({
     }
 });
 
-tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1});
+tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1, delay: 1});
 
 // let tl5 = gsap.timeline({
 //     scrollTrigger: {
