@@ -71,7 +71,7 @@ body {
     margin-left: 6px;
 }
 
-.hero_wrapper h3 {
+.hero_wrapper marquee {
     order: 2;
 }
 
@@ -138,7 +138,7 @@ h3 {
 .detail_pattern {
     position: relative;
     /* left: -500px; */
-    height: 300px;
+    height: 150px;
 }
 
 .menu_wrapper {
