@@ -50,7 +50,7 @@ tl3.from(".detail3_h2", {y: 300, opacity: 0, duration: 1})
 let tl4 = gsap.timeline({
     scrollTrigger: {
         trigger: ".detail4",
-        start: "top center"
+        start: "top bottom"
     }
 });
 
