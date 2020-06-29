@@ -73,6 +73,7 @@ body {
 
 .hero_wrapper marquee {
     order: 2;
+    width: 100%;
 }
 
 .hero_wrapper img.logo {
@@ -240,7 +241,7 @@ h3 {
         padding-bottom: 6px;
     }
     .hero_wrapper {
-        height: calc(100vh - 71px);
+        height: calc(100vh - 77px);
     }
     .links_block {
         order: 0;
