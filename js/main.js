@@ -84,15 +84,18 @@ tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1, delay: 1});
 // Glidejs carousel
 new Glide('.glide.glide1', {
     autoplay: 3000,
-    animationDuration: 1500
+    animationDuration: 1500,
+    rewindDuration: 2000
 }).mount();
 
 new Glide('.glide.glide2', {
     autoplay: 3000,
-    animationDuration: 1500
+    animationDuration: 1500,
+    rewindDuration: 2000
 }).mount();
 
 new Glide('.glide.glide3', {
     autoplay: 3000,
-    animationDuration: 1500
+    animationDuration: 1500,
+    rewindDuration: 2000
 }).mount();

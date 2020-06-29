@@ -237,6 +237,7 @@ h3 {
         top: unset;
         bottom: 0;
         width: 100%;
+        padding-bottom: 6px;
     }
     .hero_wrapper {
         height: calc(100vh - 71px);
