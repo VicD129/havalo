@@ -89,8 +89,7 @@ body {
 }
 
 .menu_wrapper,
-.contacts_wrapper,
-footer {
+.contacts_wrapper {
     padding-top: 36px;
     background-color: #195225;
 }
@@ -225,10 +224,11 @@ h3 {
     text-decoration: none;
 }
 
-footer {
+.footer {
     color: #62AE7D;
     text-align: center;
-    padding-bottom: 72px;
+    padding-top: 72px;
+    padding-bottom: 24px;
 }
 
 @media (max-width: 576px) {
