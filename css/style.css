@@ -42,7 +42,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
     align-items: center;
     margin: 0;
     padding: 0;
@@ -55,7 +56,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin-top: 56px;
     margin-bottom: 0;
 }
 
@@ -203,6 +203,10 @@ h3 {
 
 .contacts_wrapper {
     padding-bottom: 80px;
+    background-image: url(../img/hvl-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .contact_container {
@@ -234,11 +238,12 @@ footer {
         bottom: 0;
         width: 100%;
     }
+    .hero_wrapper {
+        height: calc(100vh - 71px);
+    }
     .links_block {
         order: 0;
         flex-direction: column;
-        margin-top: -56px;
-        margin-bottom: 16px;
     }
     .links_block a {
         text-align: center;

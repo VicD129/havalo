@@ -15,7 +15,22 @@ coll[i].addEventListener("click", function() {
 }
 
 
-// ScrollTrigger animations
+// Animations
+let tl0 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".links_block",
+        start: "top center"
+    }
+});
+
+tl0.from(".links_block", {y: -300, opacity: 0, duration: 1.5, delay: 1});
+
+gsap.to('.logo', {
+    duration: 1.5,
+    delay: 1,
+    scale: 1
+});
+
 let tl1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".details_wrapper",
@@ -68,20 +83,16 @@ tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1, delay: 1});
 
 // Glidejs carousel
 new Glide('.glide.glide1', {
-    autoplay: 3000
+    autoplay: 3000,
+    animationDuration: 1500
 }).mount();
 
 new Glide('.glide.glide2', {
-    autoplay: 3000
+    autoplay: 3000,
+    animationDuration: 1500
 }).mount();
 
 new Glide('.glide.glide3', {
-    autoplay: 3000
+    autoplay: 3000,
+    animationDuration: 1500
 }).mount();
-
-// Logo animation
-gsap.to('.logo', {
-    duration: 1.5,
-    delay: 1,
-    scale: 1
-});
