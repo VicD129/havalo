@@ -5,6 +5,11 @@
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#5A7F63;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#2F5845;}
+	@media (prefers-color-scheme: dark) {
+		.st0 {fill:#5A7F63;}
+		.st1 {fill:#FFFFFF;}
+		.st2 {fill:#2F5845;}
+	}
 </style>
 <g>
 	
