@@ -37,7 +37,7 @@
   transform: translateX(-50%); }
 
 .glide__bullet {
-  background-color: #ccc;
+  background-color: #62AE7D;
   width: 9px;
   height: 9px;
   padding: 0;
@@ -51,10 +51,10 @@
   .glide__bullet:focus {
     outline: none; }
   .glide__bullet:hover, .glide__bullet:focus {
-    border: 2px solid #195225;
-    background-color: #195225; }
+    border: 2px solid #fff;
+    background-color: #fff; }
   .glide__bullet--active {
-    background-color: #195225; }
+    background-color: #fff; }
 
 .glide--swipeable {
   cursor: grab;
