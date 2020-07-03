@@ -16,14 +16,14 @@ coll[i].addEventListener("click", function() {
 
 
 // Animations
-let tl0 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".links_block",
-        start: "top center"
-    }
-});
+// let tl0 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".links_block",
+//         start: "top center"
+//     }
+// });
 
-tl0.from(".links_block", {y: -300, opacity: 0, duration: 1.5, delay: 1});
+// tl0.from(".links_block", {y: -300, opacity: 0, duration: 1.5, delay: 1});
 
 gsap.to('.logo', {
     duration: 1.5,

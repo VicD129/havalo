@@ -260,3 +260,9 @@ h3 {
         margin-bottom: 12px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+	.st0 {fill:#5A7F63;}
+	.st1 {fill:#FFFFFF;}
+	.st2 {fill:#2F5845;}
+}
