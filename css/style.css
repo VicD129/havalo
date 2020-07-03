@@ -212,9 +212,9 @@ h3 {
 .contacts_wrapper {
     padding-bottom: 80px;
     background-image: url(../img/hvl-pattern.svg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-7;
     background-position: center;
-    background-size: cover;
+    background-size: 150%;
 }
 
 .contact_container {
