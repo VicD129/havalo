@@ -16,6 +16,7 @@ coll[i].addEventListener("click", function() {
 
 
 // Animations
+
 // let tl0 = gsap.timeline({
 //     scrollTrigger: {
 //         trigger: ".links_block",
@@ -70,16 +71,6 @@ let tl4 = gsap.timeline({
 });
 
 tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1, delay: 1});
-
-// let tl5 = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: ".detail_pattern",
-//         scrub: true,
-//         start: "top bottom"
-//     }
-// });
-
-// tl5.from(".detail_pattern", {x: 250})
 
 // Glidejs carousel
 new Glide('.glide.glide1', {
