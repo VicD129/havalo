@@ -118,10 +118,9 @@ h3 {
 
 .details_wrapper {
     padding: 0 8px;
-    background-image: url(/img/hvl-pattern.svg);
-    background-repeat: repeat-y;
+    background-image: url(/img/hvl-pattern-bg.svg);
+    background-repeat: repeat;
     background-size: 150%;
-    background-position: center;
 }
 
 .details_wrapper section {
@@ -215,9 +214,8 @@ h3 {
 
 .contacts_wrapper {
     padding-bottom: 80px;
-    background-image: url(../img/hvl-pattern.svg);
-    background-repeat: repeat-7;
-    background-position: center;
+    background-image: url(../img/hvl-pattern-bg.svg);
+    background-repeat: repeat;
     background-size: 150%;
 }
 
