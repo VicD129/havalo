@@ -90,6 +90,11 @@ body {
     transform: scale(0.1);
 }
 
+.hero_wrapper img.element-pattern {
+    height: 24px;
+    transform: translateY(5px);
+}
+
 .map_wrapper {
     height: 100vh;
 }
