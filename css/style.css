@@ -255,6 +255,9 @@ h3 {
     .hero_wrapper {
         height: calc(100vh - 77px);
     }
+    .hero_wrapper img.logo {
+        margin-top: 0;
+    }
     .links_block {
         order: 0;
         flex-direction: column;
