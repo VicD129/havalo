@@ -78,7 +78,8 @@ body {
 
 .hero_wrapper marquee {
     order: 2;
-    /* width: 100%; */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .hero_wrapper marquee img {
