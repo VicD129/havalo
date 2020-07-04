@@ -90,8 +90,7 @@ body {
     transform: scale(0.1);
 }
 
-.hero_wrapper img.element-pattern {
-    height: 24px;
+.hero_wrapper marquee img {
     margin-bottom: -5px;
 }
 
