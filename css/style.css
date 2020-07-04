@@ -76,10 +76,9 @@ body {
     margin-left: 6px;
 }
 
-.hero_wrapper marquee {
+.hero_wrapper .marquee_wrapper {
     order: 2;
     width: 100%;
-    overflow-x: hidden;
 }
 
 .hero_wrapper marquee img {
