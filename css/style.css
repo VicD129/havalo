@@ -92,7 +92,7 @@ body {
 
 .hero_wrapper img.element-pattern {
     height: 24px;
-    transform: translateY(5px);
+    margin-bottom: -5px;
 }
 
 .map_wrapper {
