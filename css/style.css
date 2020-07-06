@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Kino-Regular";
+    font-family: "Kino-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     src: url("../font/Kino-Regular.otf") format("opentype");
     font-display: swap;
 }
