@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Kino-Regular";
     src: url("../font/Kino-Regular.otf") format("opentype");
+    font-display: swap;
 }
 
 html {
