@@ -78,7 +78,7 @@ body {
 }
 
 .hero_wrapper .marquee_wrapper {
-    opacity: 0;
+    /* opacity: 0; */
     order: 2;
     width: 100%;
 }
