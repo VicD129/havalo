@@ -32,11 +32,11 @@ gsap.to('.logo', {
     scale: 1
 });
 
-gsap.to('.marquee_wrapper', {
-    duration: 1.5,
-    delay: 2,
-    opacity: 1
-});
+// gsap.to('.marquee_wrapper', {
+//     duration: 1.5,
+//     delay: 2,
+//     opacity: 1
+// });
 
 let tl1 = gsap.timeline({
     scrollTrigger: {
