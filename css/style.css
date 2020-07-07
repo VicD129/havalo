@@ -128,7 +128,7 @@ h3 {
 .details_body {
     display: block;
     width: 100%;
-    max-width: 980px;
+    max-width: 720px;
     margin: 0 auto;
     padding-bottom: 48px;
 }
@@ -147,21 +147,17 @@ h3 {
     color: #62AE7D;
 }
 
-.overflow_wrapper {
-    width: 100%;
-    overflow: hidden;
-}
-
-.detail_pattern {
-    position: relative;
-    /* left: -500px; */
-    height: 150px;
+section.detail1,
+section.detail2,
+section.detail3,
+section.detail4 {
+    margin-top: 48px;
 }
 
 .menu_wrapper {
     display: block;
     width: 100%;
-    max-width: 980px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 1em 0;
 }
