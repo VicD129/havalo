@@ -125,7 +125,11 @@ h3 {
     background-size: contain;
 }
 
-.details_wrapper section {
+.details_body {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
     padding-bottom: 48px;
 }
 
@@ -155,9 +159,17 @@ h3 {
 }
 
 .menu_wrapper {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.menu_body {
     display: flex;
     flex-direction: column;
-    padding: 1em 0;
+    padding-bottom: 48px;
 }
 
 .menu_wrapper button {
@@ -166,10 +178,13 @@ h3 {
     color: #fff;
     cursor: pointer;
     text-align: left;
-    margin: 12px;
-    padding: 0;
+    padding: 12px;
     background-color: transparent;
     border: none;
+}
+
+.menu_wrapper button:hover {
+    background-color: #113919;
 }
 
 .menu_wrapper button.collapsible:after {
@@ -221,6 +236,13 @@ h3 {
     background-size: contain;
 }
 
+.contacts_body {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .contact_container {
     display: flex;
     flex-direction: row;
@@ -257,6 +279,9 @@ h3 {
     }
     .hero_wrapper img.logo {
         margin-top: 0;
+    }
+    .menu_wrapper button:hover {
+        background-color: transparent;
     }
     .links_block {
         order: 0;
