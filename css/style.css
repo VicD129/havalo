@@ -56,27 +56,6 @@ body {
     background-color: #195225;
 }
 
-.links_block {
-    order: 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.links_block a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-.links_block a::after {
-    position: relative;
-    top: 2px;
-    content: url("/angle-right-solid.svg");
-    margin-left: 6px;
-}
-
 .hero_wrapper .marquee_wrapper {
     /* opacity: 0; */
     order: 2;
@@ -278,13 +257,5 @@ section.detail4 {
     }
     .menu_wrapper button:hover {
         background-color: transparent;
-    }
-    .links_block {
-        order: 0;
-        flex-direction: column;
-    }
-    .links_block a {
-        text-align: center;
-        margin-bottom: 12px;
     }
 }
