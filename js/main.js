@@ -28,7 +28,7 @@ coll[i].addEventListener("click", function() {
 
 gsap.to('.logo', {
     duration: 1.5,
-    delay: 1,
+    delay: 2,
     scale: 1
 });
 
