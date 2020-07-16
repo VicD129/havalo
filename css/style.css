@@ -222,7 +222,7 @@ section.detail4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 48px;
+    padding: 48px 12px 0;
     background-image: url(/img/hvl-pattern-bg.svg);
     background-repeat: repeat;
     background-size: contain;
@@ -231,7 +231,7 @@ section.detail4 {
 .friends_body {
     width: 100%;
     max-width: 720px;
-    padding: 0 8px 36px;
+    padding-bottom: 36px;
 }
 
 .friends_body h1.friends_h1 {
