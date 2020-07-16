@@ -98,6 +98,10 @@ h3 {
     color: #62AE7D;
 }
 
+img {
+    border-radius: 12px;
+}
+
 .details_wrapper {
     padding: 0 8px;
     background-image: url(/img/hvl-pattern-bg.svg);
@@ -145,6 +149,13 @@ section.detail4 {
 .menu_body {
     display: flex;
     flex-direction: column;
+}
+
+.menu_img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 24px;
 }
 
 .menu_wrapper button {
