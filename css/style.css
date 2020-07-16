@@ -41,9 +41,9 @@ body {
     text-decoration: none;
 }
 
-/* .nav_wrapper ul li a:hover {
+.nav_wrapper ul li a:hover {
     color: #fff;
-} */
+}
 
 .hero_wrapper {
     display: flex;
