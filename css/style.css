@@ -151,11 +151,14 @@ section.detail4 {
     flex-direction: column;
 }
 
+.menu_img_container {
+    padding: 0 12px 12px;
+}
+
 .menu_img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
-    margin-bottom: 24px;
 }
 
 .menu_wrapper button {
