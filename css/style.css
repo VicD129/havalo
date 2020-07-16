@@ -219,10 +219,54 @@ section.detail4 {
 }
 
 .friends_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 48px;
     background-image: url(/img/hvl-pattern-bg.svg);
     background-repeat: repeat;
     background-size: contain;
+}
+
+.friends_body {
+    width: 100%;
+    max-width: 720px;
+    padding: 0 8px 36px;
+}
+
+.friends_body h1.friends_h1 {
+    color: #fff;
+}
+
+.friends_container {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    margin-bottom: 36px;
+    background-color: #195225;
+    border-radius: 12px;
+}
+
+.friends_logo {
+    height: 20px;
+    padding: 0 4px;
+    margin-top: 24px;
+    border-radius: 0;
+}
+
+.friends_card p {
+    line-height: 1.25;
+    color: #62AE7D;
+    padding: 0 4px;
+    margin-top: 0;
+}
+
+.friends_card a {
+    color: #62AE7D;
+}
+
+.friends_container:nth-of-type(odd) {
+    flex-direction: row-reverse;
 }
 
 .contacts_wrapper {
