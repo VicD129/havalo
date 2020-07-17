@@ -320,9 +320,18 @@ section.detail4 {
 
 .footer {
     color: #62AE7D;
+    line-height: 1.5;
     text-align: center;
     padding-top: 72px;
     padding-bottom: 24px;
+}
+
+.footer a {
+    color: #62AE7D;
+}
+
+.footer a:hover {
+    color: #FFF;
 }
 
 @media (max-width: 576px) {
