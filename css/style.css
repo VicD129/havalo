@@ -227,7 +227,8 @@ section.detail4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 12px 0;
+    padding: 48px 12px;
+    background-color: #113919;
     /* background-image: url(/img/hvl-pattern-bg.svg);
     background-repeat: repeat;
     background-size: contain; */
@@ -241,6 +242,19 @@ section.detail4 {
 
 .friends_body h1.friends_h1 {
     color: #62AE7D;
+}
+
+.friends_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.friends_brand {
+    width: 150px;
+    padding: 0 4px;
+    margin-top: 24px;
+    border-radius: 0;
 }
 
 .friends_container {
