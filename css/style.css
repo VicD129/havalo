@@ -49,9 +49,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: space-evenly;
-    /* justify-content: center; */
     align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     background-color: #195225;
@@ -72,7 +71,7 @@ body {
     width: 100%;
     max-width: 250px;
     display: block;
-    margin: 77px auto 0;
+    margin: 77px auto 36px;
     transform: scale(0.1);
 }
 
