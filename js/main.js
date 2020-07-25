@@ -41,7 +41,7 @@ addEventListener("load", function () {
   // set a default rate, the higher the value, the faster it is
   let rate = 75;
   // get the width of the element
-  let distance = el.clientWidth;
+  let distance = 4000;
   // get the margin-right of the element
   let style = window.getComputedStyle(el);
   let marginRight = parseInt(style.marginRight) || 0;
@@ -55,8 +55,8 @@ addEventListener("load", function () {
 
   gsap.to('.hero-marquee', {
     duration: 2,
-    opacity: 1,
-    delay: 2.5
+    delay: 2.5,
+    opacity: 1
   });
 
   gsap.to(container, time, {

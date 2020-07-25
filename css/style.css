@@ -147,7 +147,7 @@ section.detail4 {
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 0 0 1em 0;
 }
 
 .menu_body {
