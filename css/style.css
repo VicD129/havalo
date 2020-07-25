@@ -21,7 +21,7 @@ body {
 }
 
 #hero, #details, #menu, #friends, #contacts {
-    outline: hidden;
+    outline: none;
 }
 
 .nav_wrapper {
