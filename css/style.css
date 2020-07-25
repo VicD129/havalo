@@ -56,14 +56,19 @@ body {
     background-color: #195225;
 }
 
-.hero_wrapper .marquee_wrapper {
+.hero-marquee {
     /* opacity: 0; */
     order: 2;
     width: 100%;
 }
 
-.hero_wrapper marquee img {
+.hero-marquee .marquee img {
     margin-bottom: -8px;
+}
+
+.hero-marquee {
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .hero_wrapper img.logo {

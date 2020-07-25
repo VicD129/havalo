@@ -32,6 +32,36 @@ gsap.to('.logo', {
     scale: 1
 });
 
+// Marquee GSAP
+let marquee = document.querySelectorAll('.marquee-text');
+
+// added event listener because it doesn't get the right width
+addEventListener("load", function () {
+ marquee.forEach(el => {
+  // set a default rate, the higher the value, the faster it is
+  let rate = 75;
+  // get the width of the element
+  let distance = el.clientWidth;
+  // get the margin-right of the element
+  let style = window.getComputedStyle(el);
+  let marginRight = parseInt(style.marginRight) || 0;
+  // get the total width of the element
+  let totalDistance = distance + marginRight;
+  // get the duration of the animation 
+  // for a better explanation, see the quoted codepen in the first comment
+  let time = totalDistance / rate;
+  // get the parent of the element
+  let container = el.parentElement;
+
+  gsap.to(container, time, {
+   repeat: -1,
+   x: '-'+totalDistance,
+   ease: Linear.easeNone,
+  });
+ });
+});
+
+
 // gsap.to('.marquee_wrapper', {
 //     duration: 1.5,
 //     delay: 2,
