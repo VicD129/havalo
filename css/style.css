@@ -16,6 +16,10 @@ body {
     background-color: #195225;
 }
 
+#hero, #details, #menu, #friends, #contacts {
+    outline: hidden;
+}
+
 .nav_wrapper {
     display: grid;
     position: fixed;
