@@ -245,11 +245,10 @@ section.detail4 {
 .friends_body {
     width: 100%;
     max-width: 720px;
-    padding-bottom: 36px;
 }
 
 .friends_body h1.friends_h1 {
-    color: #62AE7D;
+    color: #FFF;
 }
 
 .friends_group {
@@ -265,8 +264,15 @@ section.detail4 {
     border-radius: 0;
 }
 
+.friends_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .friends_container {
     display: flex;
+    width: 45%;
     flex-direction: row;
     padding: 12px;
     margin-bottom: 36px;
@@ -282,8 +288,9 @@ section.detail4 {
 }
 
 .friends_card p {
+    font-size: 14px;
     line-height: 1.25;
-    color: #fff;
+    color: #62AE7D;
     padding: 0 4px;
     margin-top: 0;
 }
@@ -292,9 +299,9 @@ section.detail4 {
     color: #62AE7D;
 }
 
-.friends_container:nth-of-type(odd) {
+/* .friends_container:nth-of-type(odd) {
     flex-direction: row-reverse;
-}
+} */
 
 .contacts_wrapper {
     padding-bottom: 80px;
@@ -358,5 +365,8 @@ section.detail4 {
     }
     .menu_wrapper button:hover {
         background-color: transparent;
+    }
+    .friends_container {
+        width: 100%;
     }
 }
