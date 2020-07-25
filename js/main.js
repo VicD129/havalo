@@ -39,7 +39,7 @@ let marquee = document.querySelectorAll('.marquee-text');
 addEventListener("load", function () {
  marquee.forEach(el => {
   // set a default rate, the higher the value, the faster it is
-  let rate = 75;
+  let rate = 50;
   // get the width of the element
   let distance = 4000;
   // get the margin-right of the element
