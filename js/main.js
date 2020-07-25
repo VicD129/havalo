@@ -53,6 +53,12 @@ addEventListener("load", function () {
   // get the parent of the element
   let container = el.parentElement;
 
+  gsap.to('.hero-marquee', {
+    duration: 2,
+    opacity: 1,
+    delay: 2.5
+  });
+
   gsap.to(container, time, {
    repeat: -1,
    x: '-'+totalDistance,
