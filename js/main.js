@@ -112,7 +112,38 @@ let tl4 = gsap.timeline({
     }
 });
 
-tl4.from(".detail4_h2", {y: 100, opacity: 0, duration: 1, delay: 1});
+tl4.from(".detail4_h2", {y: 300, opacity: 0, duration: 1})
+   .from(".glide4", {y: 300, opacity: 0, duration: 1});
+
+let tl5 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".detail5",
+        start: "top bottom"
+    }
+});
+
+tl5.from(".detail5_h2", {y: 300, opacity: 0, duration: 1})
+   .from(".glide5", {y: 300, opacity: 0, duration: 1});
+
+let tl6 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".detail6",
+        start: "top bottom"
+    }
+});
+
+tl6.from(".detail6_h2", {y: 300, opacity: 0, duration: 1})
+   .from(".glide6", {y: 300, opacity: 0, duration: 1});
+
+let tl7 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".detail7",
+        start: "top bottom"
+    }
+});
+
+tl7.from(".detail7_h2", {y: 300, opacity: 0, duration: 1})
+   .from(".glide7", {y: 300, opacity: 0, duration: 1});
 
 // Glidejs carousel
 new Glide('.glide.glide1', {
@@ -128,6 +159,30 @@ new Glide('.glide.glide2', {
 }).mount();
 
 new Glide('.glide.glide3', {
+    autoplay: 3000,
+    animationDuration: 1500,
+    rewindDuration: 2000
+}).mount();
+
+new Glide('.glide.glide4', {
+    autoplay: 3000,
+    animationDuration: 1500,
+    rewindDuration: 2000
+}).mount();
+
+new Glide('.glide.glide5', {
+    autoplay: 3000,
+    animationDuration: 1500,
+    rewindDuration: 2000
+}).mount();
+
+new Glide('.glide.glide6', {
+    autoplay: 3000,
+    animationDuration: 1500,
+    rewindDuration: 2000
+}).mount();
+
+new Glide('.glide.glide7', {
     autoplay: 3000,
     animationDuration: 1500,
     rewindDuration: 2000
