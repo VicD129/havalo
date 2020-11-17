@@ -169,7 +169,7 @@ section.detail4 {
     align-items: center;
     height: 300px;
     padding: 0 8px 8px;
-    background: url('../img/menu_bg.png') rgba(3, 64, 58, 0.5);
+    background: url('../img/menu_bg.png') rgba(3, 64, 58, 0.6);
     background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
