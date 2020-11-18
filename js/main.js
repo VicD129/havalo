@@ -145,6 +145,16 @@ let tl7 = gsap.timeline({
 tl7.from(".detail7_h2", {y: 300, opacity: 0, duration: 1})
    .from(".glide7", {y: 300, opacity: 0, duration: 1});
 
+let tl8 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".detail8",
+        start: "top bottom"
+    }
+});
+
+tl7.from(".detail8_h2", {y: 300, opacity: 0, duration: 1})
+   .from(".glide8", {y: 300, opacity: 0, duration: 1});
+
 // Glidejs carousel
 new Glide('.glide.glide1', {
     autoplay: 3000,
@@ -176,13 +186,19 @@ new Glide('.glide.glide5', {
     rewindDuration: 2000
 }).mount();
 
-new Glide('.glide.glide6', {
+// new Glide('.glide.glide6', {
+//     autoplay: 3000,
+//     animationDuration: 1500,
+//     rewindDuration: 2000
+// }).mount();
+
+new Glide('.glide.glide7', {
     autoplay: 3000,
     animationDuration: 1500,
     rewindDuration: 2000
 }).mount();
 
-new Glide('.glide.glide7', {
+new Glide('.glide.glide8', {
     autoplay: 3000,
     animationDuration: 1500,
     rewindDuration: 2000
