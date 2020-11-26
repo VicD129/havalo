@@ -55,7 +55,6 @@ addEventListener("load", function () {
 
   gsap.to('.hero-marquee', {
     duration: 2,
-    delay: 2.5,
     opacity: 1
   });
 
