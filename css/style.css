@@ -362,6 +362,10 @@ section.detail4 {
     color: #FFF;
 }
 
+.muted-green {
+    color: #62AE7D;
+}
+
 @media (max-width: 576px) {
     .nav_wrapper {
         position: fixed;
