@@ -239,6 +239,12 @@ section.detail4 {
     margin: 0;
 }
 
+.menu_item-desc {
+    color: #195225;
+    font-size: 12px;
+    align-self: center;
+}
+
 .friends_wrapper {
     display: flex;
     flex-direction: column;
