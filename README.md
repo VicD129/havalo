@@ -1,2 +1,2 @@
 # HAVALO
-https://hvl.com.ua website
+Authentic restaurant's website
